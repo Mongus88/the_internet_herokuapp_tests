@@ -22,5 +22,4 @@ jobs:
 
       - name: Run Pytest
         run: |
-          cd test/PlayWright/the_internet_herokuapp
           python -m pytest

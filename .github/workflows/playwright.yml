@@ -21,4 +21,6 @@ jobs:
         run: playwright install --with-deps
 
       - name: Run Pytest
-        run: pytest
+        run: |
+          cd test/PlayWright/the_internet_herokuapp
+          python -m pytest

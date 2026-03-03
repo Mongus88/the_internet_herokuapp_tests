@@ -16,7 +16,7 @@ class FormAuthenticationPage(BasePage):
 
     def open_form_authentication(self):
         self.page.goto(self.login_url)
-        self.form_authentication_check()
+        self.check_form_authentication()
 
     def fill_username(self, keyword):
         self.username_input.fill(keyword)

@@ -14,5 +14,3 @@ def test_login(page, base_url):
     expect(form_authentication_page.error_message).to_be_visible()
     expect(form_authentication_page.error_message).to_contain_text("Your username is invalid!")
     expect(form_authentication_page.error_message).to_have_class("flash error")
-
-

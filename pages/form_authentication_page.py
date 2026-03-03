@@ -11,20 +11,20 @@ class FormAuthenticationPage(BasePage):
         self.login_button = page.get_by_role("button", name="login")
         self.error_message: Locator = page.locator("#flash")
 
-    def form_authentication_check(self):
+    def check_form_authentication(self):
         expect(self.page).to_have_url(self.login_url)
 
     def open_form_authentication(self):
         self.page.goto(self.login_url)
         self.form_authentication_check()
 
-    def username_fill(self, keyword):
+    def fill_username(self, keyword):
         self.username_input.fill(keyword)
 
-    def password_fill(self, keyword):
+    def fill_password(self, keyword):
         self.password_input.fill(keyword)
 
-    def login_button_click(self):
+    def click_login_button(self):
         self.login_button.click()
 
 

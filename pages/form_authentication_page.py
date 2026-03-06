@@ -8,7 +8,7 @@ class FormAuthenticationPage(BasePage):
         self.login_url = base_url + "/login"
         self.username_input: Locator = page.get_by_label("username")
         self.password_input: Locator = page.get_by_label("password")
-        self.login_button = page.get_by_role("button", name="login")
+        self.login_button: Locator = page.get_by_role("button", name="login")
         self.error_message: Locator = page.locator("#flash")
 
     def check_form_authentication(self):

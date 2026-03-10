@@ -5,14 +5,14 @@ class BrokenImagePage(BasePage):
 
     def __init__(self, page: Page, base_url: str):
         super().__init__(page, base_url)
-        self.login_url = base_url + "/broken_images"
+        self.broken_image_url = base_url + "/broken_images"
         self.all_images: Locator = page.locator("img")
 
     def check_broken_image(self):
-        expect(self.page).to_have_url(self.login_url)
+        expect(self.page).to_have_url(self.broken_image_url)
 
     def open_broken_image(self):
-        self.page.goto(self.login_url)
+        self.page.goto(self.broken_image_url)
         self.check_broken_image()
 
     def broken_image_count(self) -> int:

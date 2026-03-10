@@ -1,6 +1,6 @@
 from playwright.sync_api import expect
 
-from pages.form_authentication_page import FormAuthenticationPage
+from ui.pages.form_authentication_page import FormAuthenticationPage
 
 
 def test_login(page, base_url):

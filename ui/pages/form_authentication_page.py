@@ -1,5 +1,5 @@
 from playwright.sync_api import expect, Page, Locator
-from .base_page import BasePage
+from ui.pages.base_page import BasePage
 
 class FormAuthenticationPage(BasePage):
 

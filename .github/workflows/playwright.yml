@@ -28,8 +28,9 @@ jobs:
       - name: Install Playwright Browsers
         run: uv run playwright install --with-deps chromium
 
-      - name: Run Pytest
+      - name: Run tests
         run: |
+          export PYTHONPATH=$PYTHONPATH:$(pwd)
           uv run pytest ui/tests --html=report.html --self-contained-html
 
       - name: Upload Test Report

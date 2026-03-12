@@ -1,6 +1,8 @@
 import pytest
 from playwright.sync_api import expect
+
 from ui.pages.broken_image_page import BrokenImagePage
+
 
 @pytest.mark.xfail(reason="Az oldalon van 2 db broken image")
 def test_check_broken_image(page, base_url):

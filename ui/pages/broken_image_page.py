@@ -3,6 +3,7 @@ from ui.pages.base_page import BasePage
 
 class BrokenImagePage(BasePage):
 
+
     def __init__(self, page: Page, base_url: str):
         super().__init__(page, base_url)
         self.broken_image_url = base_url + "/broken_images"

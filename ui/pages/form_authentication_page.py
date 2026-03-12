@@ -1,5 +1,7 @@
 from playwright.sync_api import expect, Page, Locator
+
 from ui.pages.base_page import BasePage
+
 
 class FormAuthenticationPage(BasePage):
 
@@ -26,5 +28,4 @@ class FormAuthenticationPage(BasePage):
 
     def click_login_button(self):
         self.login_button.click()
-
 

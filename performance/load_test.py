@@ -1,5 +1,7 @@
 from locust import HttpUser, task, between
+
 from performance.performance_page import BasePageLocust
+
 
 class WebsiteUser(HttpUser):
 

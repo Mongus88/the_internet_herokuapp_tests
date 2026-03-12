@@ -1,5 +1,7 @@
 from playwright.sync_api import expect, Page, Locator
+
 from ui.pages.base_page import BasePage
+
 
 class JavaScriptAlerts(BasePage):
 
